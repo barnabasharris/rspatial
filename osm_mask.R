@@ -4,6 +4,7 @@ require(dplyr)
 require(purrr)
 require(osmdata)
 require(Rsagacmd)
+require(fasterize)
 
 maskOSM <- function(dem) {
   # create grid from DEM
@@ -93,4 +94,3 @@ maskOSM <- function(dem) {
   return(demInt)
 }
 
-maskOSM(dat$SU04NE7$vs_one)
